@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --font-main: 'Lato', sans-serif;
+    --font-outher: 'Abel', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    box-sizing: border-box;
+    min-width: 100%;
+}
+/************************************navbar******************************/
+section .navbar {
+    background-color: transparent;
+    font-family: var(--font-main);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+section nav .flex {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    z-index: 10;
+}
+
+section nav div img {
+    height: 60px;
+    width: 80px;
+    margin-right: 50px;
+}
+
+section nav div a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+}
+section nav div a:hover {
+    padding-top: .5px;
+    text-decoration: underline 2px grey;
+}
+
+section nav .sign-in {
+    margin-right: 12px;
+}
+
+section nav .sign-in button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section nav .sign-in button:hover {
+    background-color: red;
+}
+/************************************navbar end******************************/
+
+
+/************************************banner******************************/
+.banner {
+    height: 102vh;
+    top: -110px;
+}
+.banner-text {
+    color: white;
+    font-family: var(--font-main);
+    padding-top: 320px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner-text h1 {
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.banner-text button {
+    background-color: grey;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.banner-text button:hover {
+    background-color: red;
+}
+/************************************banner end******************************/
+
+/************************************menu******************************/
+.menu {
+    margin-top: -110px;
+    background-color: black;
+}
+.menu-text {
+    color: black;
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.text {
+    display: block;
+    margin: 10px 20px 10px 20px;
+}
+.text-mid {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0 10px 0 10px;
+}
+/************************************menu end******************************/
+
+/************************************about******************************/
+.about {
+    color: black;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    margin: 0 50px 0 50px;
+}
+.about h1 {
+    text-align: center;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.about .container {
+    display: flex;
+    text-align: justify;
+}
+.about .container .text-about {
+    padding: 20px;
+    font-family: var(--font-main);
+}
+.about .container .text-about div {
+    display: flex;
+    justify-content: center;
+}
+.about .container .text-about img {
+    width: 80px;
+    height: 80px;
+}
+/************************************about end******************************/
+
+/************************************carousel******************************/
+.carousel {
+    justify-content: center;
+    min-height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(image/terasering\ kiri.jpg);
+}
+.carousel .container {
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+}
+.carousel .container h1 {
+    background-color: transparent;
+    font-family: var(--font-outher);
+    color: rgb(201, 192, 192);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-size: medium;
+    padding: 20px 0 20px 0;
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+}
+/************************************carousel end******************************/
+
+/************************************card******************************/
+
+.story {
+    background: grey;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.story-text {
+    text-transform: uppercase;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-top: -50px;
+}
+.main-card {
+    background: white;
+    border-radius: 1rem;
+    margin-right: 6rem;
+    padding: 5rem;
+    border: 3px solid red;
+    box-shadow: 4px 4px 12px 2px;
+}
+.main-card h2 {
+    padding-top: 2rem;
+    margin-left: -2rem;
+}
+.main-card p {
+    padding-top: 2rem;
+    margin: -2rem;
+}
+.cards {
+    display: flex;
+    margin: 0 5rem 0 5rem;
+    --distance: -4rem;
+}
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 0 4rem 0 4rem;
+    box-shadow: 4px 4px 12px 2px;
+    transition: 0.2s;
+    background-size: cover;
+    background-position: center;
+}
+.card:not(:first-child) {
+    margin-left: var(--distance);
+}
+.card:hover,
+.card:focus-within {
+    transform: translateY(var(--distance));
+}
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+    transform: translateX(4rem);
+    background: grey;
+}
+.card-text {
+    background-color: transparent;
+    margin: 10rem 0 0 -4rem;
+    backdrop-filter: blur(12px);
+}
+.card-text h2 {
+    padding: 10px;
+}
+.card-text p {
+    padding: 10px;
+}
+
+
+.card-one {
+    background-image: url(image/terasering\ atas.jpg);
+}
+.card-two {
+    background-image: url(image/terasering\ foto.jpeg);
+}
+.card-three {
+    background-image: url(image/terasering\ kiri.jpg);
+}
+.card-four {
+    background-image: url(image/terasering\ kanan.jpg);
+}
+.card-five {
+    background-image: url(image/sawah.jpg);
+}
